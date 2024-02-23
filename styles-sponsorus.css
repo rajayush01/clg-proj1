@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Mono', monospace;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+html,
+body {
+  width: 100vw;
+  scroll-behavior: smooth;
+  background-color: black;
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+.logo {
+    height: 40px;
+    margin-top: 5px;
+    width: 80px;
+    margin-left: -100px;
+  }
+}
+.navbar-link{
+  margin: -0.25rem;
+}
+
+#navbar-menu{
+  margin-left: 320px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: -2%;
+}
+
+p {
+  font-size: 1rem;
+  margin: 8px;
+  text-align: center;
+}
+
+/*.dropdown{
+    position: relative;
+    margin-top: 100px;
+    width: 300px;
+    height: 50px;
+
+  }
+
+  .dropdown::before{
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 28px;
+    width: 12px;
+    height: 2px;
+    background: #fff;
+    z-index: 10;
+    transform: rotate(40deg);
+    transition: 0.5s;
+  }
+
+  .dropdown.active::before{
+    right: 20px;
+  }
+
+  .dropdown::after{
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    width: 12px;
+    height: 2px;
+    background: #fff;
+    z-index: 10;
+    transform: rotate(40deg);
+    transition: 0.5s;
+  }
+
+  .dropdown.active::after{
+    right: 28px;
+  }
+
+  .dropdown .input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    outline: none;
+    border:none;
+  }
+
+  .dropdown .option{
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background: white;
+    box-shadow: 0 30px 30px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.25s;
+  }
+
+  .dropdown.active .option{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .dropdown .option_list{
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.dropdown .option_list:hover{
+    background: #62baea;
+    color: white;
+} */
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2%;
+
+}
+
+body {
+  min-height: 100%;
+}
+
+
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.details {
+  margin-right: 240px;
+}
+
+.reach {
+  margin-right: 150px;
+}
+
+.social-media a {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+
+.social-media a:hover {
+  color: rgb(38, 212, 38);
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.sec-1 {
+  width: 100vw;
+  background-image: linear-gradient(109.6deg, rgba(2, 0, 4, 1) 14.2%, rgb(54, 5, 102)91.2%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+
+}
+
+.Check {
+  width: 180px;
+  border: 0;
+  padding: 12px 2px;
+  background: linear-gradient(to right, #cf2e22, #b34708);
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.5s;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 50px;
+}
+
+
+
+.Check:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Check:hover {
+    transform: scale(1);
+  }
+
+  .Check {
+    margin: 2%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Check:hover {
+    transform: scale(1);
+  }
+
+}

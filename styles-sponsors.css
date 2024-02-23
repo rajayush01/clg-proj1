@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+
+:root {
+    --navbar-bg-color: hsl(0, 0%, 1%);
+    --navbar-text-color: hsl(0, 0%, 85%);
+    --navbar-text-color-focus: white;
+    --navbar-bg-contrast: hsl(0, 0%, 25%);
+    --first-color: hsl(38, 92%, 58%);
+    --first-color-light: hsl(38, 100%, 78%);
+    --first-color-alt: hsl(32, 75%, 50%);
+    --second-color: hsl(195, 75%, 52%);
+    --dark-color: hsl(212, 40%, 12%);
+    --white-color: hsl(212, 4%, 95%);
+    --body-color: hsl(212, 42%, 15%);
+    --container-color: hsl(212, 42%, 20%);
+}
+
+.navbar-menu{
+    
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+
+}
+
+
+.logo {
+    margin-left: -70px;
+}
+
+#navbar-menu {
+    margin-left: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace;
+    color: white;
+    text-decoration: none;
+
+}
+
+html,
+body {
+    width: 100vw;
+    scroll-behavior: smooth;
+    background-color: black;
+
+
+}
+
+body {
+    min-height: 100%;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.sec-1 {
+    width: 100vw;
+    background-image: linear-gradient(109.6deg, rgba(2, 0, 4, 1) 14.2%, rgb(54, 5, 102)91.2%);
+    margin: 0 auto;
+}
+
+.main-info h1{
+    position: absolute;    
+}
+
+.dropbtn1 {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    
+  }
+  .dropdown1 {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(239, 229, 229, 0.2);
+    z-index: 1;
+    
+  }
+  .dropdown-content1 a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content1 a:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+  
+  .dropdown1:hover .dropbtn1 {
+    background-color: var(--navbar-bg-contrast);
+    
+  }
+
+.sponsor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.sponsor-holder {
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    background-color: rgb(204, 198, 198);
+    top: -40px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.sponsor-holder>img {
+    width: 80%;
+    object-fit: cover;
+    transition: 0.6s ease-in-out;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    backface-visibility: hidden;
+
+}
+
+.sponsor-holder:hover {
+  transform: rotateY(180deg);
+}
+
+.sponsor-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(204, 198, 198);
+    border-radius: 10%;
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    color: rgb(106, 4, 4);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .sponsor-back h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
+  
+  .sponsor-back p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+.check {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 4%;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.details {
+    margin-right: 240px;
+}
+
+.reach {
+    margin-right: 150px;
+}
+
+.social-media a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+
+.social-media a:hover {
+    color: rgb(38, 212, 38);
+}
+
+.footer {
+    margin-top: auto;
+}
